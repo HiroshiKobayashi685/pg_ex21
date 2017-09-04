@@ -14,7 +14,7 @@ public class Invoice {
 	public static void main(String args[]){
 		try{
 			File readFile = new File("/Applications/Eclipse_4.6.3.app/Contents/workspace/invoice_caluculate/InterFace/record.log");
-			File writeFile = new File("/Applications/Eclipse_4.6.3.app/Contents/workspace/invoice_caluculate/InterFace/output.log");
+			File writeFile = new File("/Applications/Eclipse_4.6.3.app/Contents/workspace/invoice_caluculate/InterFace/invoice.dat");
 
 			FileReader filereader = new FileReader(readFile);
 			BufferedReader bufferedReader = new BufferedReader(filereader);
@@ -29,7 +29,7 @@ public class Invoice {
 						pw.println("1 "+User.returnUser());
 						pw.println("5 "+Caluculate.basePrice());
 						pw.println("7 "+Caluculate.telPrice());
-						pw.println("9 ================================");
+						pw.println("9 =====================");
 						Clear.clear();
 					}
 					if(flag==1){User.setInfo(data);}
